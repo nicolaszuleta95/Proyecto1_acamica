@@ -1,0 +1,36 @@
+/*FONTS*/
+/*  IBM Plex Mono REGULAR  */
+@font-face {
+  font-family: "IBM Plex Mono Regular", monospace;
+  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+}
+$ibmplexmono_regular: "IBM Plex Mono Regular", monospace;
+
+/*  IBM Plex sans REGULAR  */
+@font-face {
+  font-family: "IBM Plex Sans Regular", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+}
+$ibmplexsans_regular: "IBM Plex Sans Regular", sans-serif;
+
+/*  IBM Plex Mono MEDIUM  */
+@font-face {
+  font-family: "IBM Plex Mono Medium", monospace;
+  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap");
+}
+$ibmplexmono_medium: "IBM Plex Mono Medium", monospace;
+
+/*  IBM Plex sans Semi Bold  */
+@font-face {
+  font-family: "IBM Plex Sans Semi Bold", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap");
+}
+$ibmplexsans_semibold: "IBM Plex Sans Semi Bold", sans-serif;
+
+/*TAMAÑOS*/
+$maxwidth: 1440px;
+
+/*COLORES*/
+$background_primary: #ffffff;
+$font_primary: #ffffff;
+$nav_mobile: #0000ec 100%;
