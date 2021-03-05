@@ -12,18 +12,30 @@
   </head>
   <body>
     <header>
-      <img src="./images/logo.svg" alt="logo" />
-      <nav>
-        <div class="menu">
+      <nav class="nav_desktop">
+        <div class="container">
+          <img src="./images/logo.svg" alt="Logo" class="logo_desktop" />
+          <ul class="nav_list">
+            <li class="nav_item"><a class="nav_item" href="#">EPISODIOS</a></li>
+            <li class="nav_item"><a class="nav_item" href="#">NOSOTROS</a></li>
+            <li class="nav_item">
+              <a class="nav_item" href="#">ENTREVISTAS</a>
+            </li>
+            <li class="nav_item"><a class="nav_item" href="#">TÓPICOS</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="nav_mobile">
+        <div class="dropdown_menu">
+          <img src="./images/logo.svg" alt="Logo" class="logo_mobile" />
+          <i class="fas fa-bars" id="icon_menu"></i>
+          <i class="fas fa-times" id="icon_close"></i>
           <input type="checkbox" id="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
           <ul>
-            <li><a href="">EPISODIOS</a></li>
-            <li><a href="">NOSOTROS</a></li>
-            <li><a href="">ENTREVISTAS</a></li>
-            <li><a href="">TÓPICOS</a></li>
+            <li><a href="#">Item1</a></li>
+            <li><a href="#">Item2</a></li>
+            <li><a href="#">Item3</a></li>
+            <li><a href="#">Item4</a></li>
           </ul>
         </div>
       </nav>

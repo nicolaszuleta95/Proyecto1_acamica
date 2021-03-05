@@ -24,105 +24,91 @@ body {
 }
 
 /*HEADER con NAV y menu hamburguesa*/
-header {
-  font-family: $ibmplexmono_regular;
-  width: 100%;
-  position: fixed;
-  height: 44px;
-  top: 0;
-}
-header img {
-  float: left;
-  margin: 10px 0px 0px 16px;
-}
-header nav {
-  float: right;
-  margin: 16px 19px 16px 0;
-}
-header nav .menu ul {
-  /*posicion absolute para que se posicione debajo del resto del header - top medida del header*/
-  width: 100%;
-  position: absolute;
-  top: 44px;
-  right: 0;
-  overflow: hidden;
-  list-style: none;
-  background: $nav_mobile;
-  height: 0px;
-}
-header nav .menu ul li {
-  position: relative;
+.nav_mobile {
+  display: none;
 }
 
-header nav .menu ul li a {
-  position: relative;
-  text-decoration: none;
-  color: $font_primary;
-  padding: 16px 16px;
-  line-height: 28px;
-  display: block;
-}
-
-header nav .menu input[type="checkbox"]:checked ~ ul {
-  height: 240px;
-}
-
-/*checkbox transparente y en primer plano*/
-header nav .menu input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  opacity: 0;
-  z-index: 2;
-  position: absolute;
-}
-/*span -lineas del menu hamburguesa-*/
-header nav .menu span {
-  display: block;
-  width: 18px;
-  height: 2px;
-  margin-bottom: 3px;
-  position: relative;
-  background: #000;
-  z-index: 1;
-}
-
-/*menu simple con tamaño menor a 320px*/
-@media screen and (min-width: 320px) {
-  header {
+.nav_desktop {
+  display: flex;
+  .container {
+    display: flex;
+    justify-content: space-between;
     height: 80px;
-
-    img {
+    width: 100%;
+    align-items: center;
+    .logo_desktop {
       width: 36px;
       height: 36px;
-      float: left;
-      margin: 22px 0px 0px 100px;
+      margin-left: 100px;
+    }
+    .nav_list {
+      display: flex;
+      text-decoration: none;
+      list-style-type: none;
+      .nav_item {
+        font-family: $ibmplexmono_regular;
+        line-height: 28px;
+        letter-spacing: 0;
+        text-decoration: none;
+        color: $font_primary;
+        padding-right: 28px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
     }
   }
-  header nav .menu ul {
-    position: relative;
-    top: 0;
-    right: 0;
-    overflow: hidden;
-    background: $background_primary;
-    height: 80px;
-    margin-right: 100px;
-  }
-  header nav .menu ul li {
-    padding-right: 48px;
-    display: inline-block;
-  }
+}
 
-  header nav .menu ul li a {
-    color: black;
-    padding: 26px 0px;
-    line-height: 28px;
-  }
-
-  header nav .menu input {
+/*Para version mobile*/
+@media only screen and (max-width: 320px) {
+  .nav_desktop {
     display: none;
   }
-  header nav .menu span {
-    display: none;
+
+  .nav_mobile {
+    display: flex;
+    .dropdown_menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 44px;
+      width: 100%;
+
+      .logo_mobile {
+        height: 24px;
+        width: 24px;
+      }
+
+      #checkbox {
+        position: absolute;
+        display: flex;
+        width: 40px;
+        height: 32px;
+      }
+
+      #icon_menu {
+      }
+
+      #icon_close {
+      }
+
+      ul {
+        background: $nav_mobile;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 44px;
+        width: 100%;
+        li {
+          position: relative;
+          a {
+            font-family: $ibmplexmono_regular;
+            text-decoration: none;
+            line-height: 28px;
+            color: $font_secondary;
+          }
+        }
+      }
+    }
   }
 }
