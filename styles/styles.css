@@ -115,22 +115,24 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     height: 44px;
     width: 100%;
   }
   .nav_mobile .dropdown_menu .logo_mobile {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    justify-self: flex-start;
     margin-left: 16px;
     height: 24px;
     width: 24px;
   }
   .nav_mobile .dropdown_menu #checkbox {
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    justify-self: flex-end;
     width: 40px;
     height: 32px;
   }
@@ -138,10 +140,11 @@ body {
     height: 224px;
   }
   .nav_mobile .dropdown_menu #icon_menu {
-    position: absolute;
-  }
-  .nav_mobile .dropdown_menu #icon_close {
-    position: absolute;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    justify-self: flex-end;
+    margin-right: 19px;
   }
   .nav_mobile .dropdown_menu ul {
     background: #0000ec 100%;
