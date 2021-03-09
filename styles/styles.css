@@ -138,6 +138,9 @@ body {
   }
   .nav_mobile .dropdown_menu #checkbox input[type="checkbox"]:checked ~ ul {
     height: 224px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .nav_mobile .dropdown_menu #icon_menu {
     display: -webkit-inline-box;

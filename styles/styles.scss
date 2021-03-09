@@ -91,6 +91,7 @@ body {
 
         input[type="checkbox"]:checked ~ ul {
           height: 224px;
+          display: flex;
         }
       }
 
