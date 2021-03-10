@@ -48,134 +48,133 @@ body {
   background-color: #ffffff;
 }
 
-/*HEADER con NAV y menu hamburguesa*/
-.nav_mobile {
-  display: none;
-}
-
-.nav_desktop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nav_desktop .container {
+/*NAV*/
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80px;
-  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 80px;
 }
 
-.nav_desktop .container .logo_desktop {
+nav .logo {
   width: 36px;
-  height: 36px;
   margin-left: 100px;
 }
 
-.nav_desktop .container .nav_list {
+nav .btncontrol {
+  display: none;
+}
+
+nav .icons {
+  display: none;
+}
+
+nav .listas-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-decoration: none;
-  list-style-type: none;
+  margin-right: 52px;
 }
 
-.nav_desktop .container .nav_list .nav_item {
+nav .listas-nav li {
+  list-style-type: none;
+  margin-right: 48px;
+}
+
+nav .listas-nav li a {
   font-family: "IBM Plex Mono Regular", monospace;
-  line-height: 28px;
-  letter-spacing: 0;
   text-decoration: none;
   color: #060a24;
-  padding-right: 28px;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
-/*Para version mobile*/
-@media only screen and (max-width: 320px) {
-  .nav_desktop {
-    display: none;
-  }
-  .nav_mobile {
+nav .listas-nav li a:hover {
+  color: #00f3bb;
+  text-decoration: line-through;
+}
+
+nav .listas-nav li a:active {
+  color: #060a24 56%;
+}
+
+/*NAV mobile*/
+@media screen and (max-width: 320px) {
+  nav {
+    height: 44px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
-  .nav_mobile .dropdown_menu {
+  nav .logo {
+    margin-left: 16px;
+    width: 24px;
+  }
+  nav .listas-nav {
+    display: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+  }
+  nav .listas-nav li {
+    height: 35px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 44px;
-    width: 100%;
   }
-  .nav_mobile .dropdown_menu .logo_mobile {
-    position: relative;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    justify-self: flex-start;
-    margin-left: 16px;
-    height: 24px;
-    width: 24px;
+  nav .listas-nav li a {
+    font-family: "IBM Plex Mono Regular", monospace;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 28px;
+    text-decoration: none;
   }
-  .nav_mobile .dropdown_menu #checkbox {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    justify-self: flex-end;
-    width: 40px;
-    height: 32px;
-  }
-  .nav_mobile .dropdown_menu #checkbox input[type="checkbox"]:checked ~ ul {
-    height: 224px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .nav_mobile .dropdown_menu #icon_menu {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    justify-self: flex-end;
-    margin-right: 19px;
-  }
-  .nav_mobile .dropdown_menu ul {
-    background: #0000ec 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  nav .btncontrol:checked ~ .listas-nav {
     position: absolute;
     top: 44px;
+    left: 0px;
+    display: block;
     width: 100%;
+    background: #0000ec;
+    z-index: 1;
+    padding-top: 16px;
   }
-  .nav_mobile .dropdown_menu ul li {
-    position: relative;
+  nav .btncontrol:checked ~ .listas-nav li {
     margin-bottom: 24px;
-    margin-left: 16px;
-    list-style-type: none;
+    margin-left: 5%;
   }
-  .nav_mobile .dropdown_menu ul li a {
-    font-family: "IBM Plex Mono Regular", monospace;
-    text-decoration: none;
-    line-height: 28px;
+  nav .btncontrol:checked ~ .listas-nav li a {
+    font-size: 16px;
     color: #ffffff;
+    letter-spacing: 0;
+    line-height: 28px;
   }
-  .nav_mobile .dropdown_menu ul li:first-child {
-    margin-top: 16px;
+  nav .btncontrol:checked + .icons .fa-bars {
+    display: none;
+  }
+  nav .btncontrol:checked + .icons .fa-times {
+    display: block;
+  }
+  nav .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 16px;
+  }
+  nav .icons .fa-bars {
+    font-size: 18px;
+  }
+  nav .icons .fa-times {
+    font-size: 18px;
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */

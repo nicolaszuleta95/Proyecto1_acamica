@@ -12,34 +12,24 @@
   </head>
   <body>
     <header>
-      <nav class="nav_desktop">
-        <div class="container">
-          <img src="./images/logo.svg" alt="Logo" class="logo_desktop" />
-          <ul class="nav_list">
-            <li class="nav_item"><a class="nav_item" href="#">EPISODIOS</a></li>
-            <li class="nav_item"><a class="nav_item" href="#">NOSOTROS</a></li>
-            <li class="nav_item">
-              <a class="nav_item" href="#">ENTREVISTAS</a>
-            </li>
-            <li class="nav_item"><a class="nav_item" href="#">TÓPICOS</a></li>
-          </ul>
-        </div>
-      </nav>
-      <nav class="nav_mobile">
-        <div class="dropdown_menu">
-          <img src="./images/logo.svg" alt="Logo" class="logo_mobile" />
-          <input type="checkbox" id="checkbox" />
-          <label for="checkbox">
-            <i class="fas fa-bars" id="icon_menu"></i>
-            <i class="fas fa-times" id="icon_close"></i>
-          </label>
-          <ul>
-            <li><a href="#">Item1</a></li>
-            <li><a href="#">Item2</a></li>
-            <li><a href="#">Item3</a></li>
-            <li><a href="#">Item4</a></li>
-          </ul>
-        </div>
+      <nav>
+        <img
+          id="logo"
+          class="logo"
+          alt="Logo circular"
+          src="./images/logo.svg"
+        />
+        <input id="btncontrol" class="btncontrol" type="checkbox" />
+        <label class="icons" for="btncontrol">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </label>
+        <ul class="listas-nav">
+          <li><a href="#episodios">EPISODIOS</a></li>
+          <li><a href="#nosotros">NOSOTROS</a></li>
+          <li><a href="#invitados">ENTREVISTAS</a></li>
+          <li><a href="#temas">TÓPICOS</a></li>
+        </ul>
       </nav>
     </header>
   </body>

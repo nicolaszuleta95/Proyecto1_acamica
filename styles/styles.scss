@@ -23,112 +23,125 @@ body {
   background-color: $background_primary;
 }
 
-/*HEADER con NAV y menu hamburguesa*/
-.nav_mobile {
-  display: none;
-}
+/*NAV*/
 
-.nav_desktop {
+nav {
   display: flex;
-  .container {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    width: 100%;
-    align-items: center;
-    .logo_desktop {
-      width: 36px;
-      height: 36px;
-      margin-left: 100px;
-    }
-    .nav_list {
-      display: flex;
-      text-decoration: none;
-      list-style-type: none;
-      .nav_item {
-        font-family: $ibmplexmono_regular;
-        line-height: 28px;
-        letter-spacing: 0;
-        text-decoration: none;
-        color: $font_primary;
-        padding-right: 28px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-      }
-    }
-  }
-}
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
 
-/*Para version mobile*/
-@media only screen and (max-width: 320px) {
-  .nav_desktop {
+  .logo {
+    width: 36px;
+    margin-left: 100px;
+  }
+
+  .btncontrol {
     display: none;
   }
 
-  .nav_mobile {
-    display: flex;
-    .dropdown_menu {
-      display: flex;
-      align-items: center;
+  .icons {
+    display: none;
+  }
 
-      height: 44px;
+  .listas-nav {
+    display: flex;
+    margin-right: 52px;
+
+    li {
+      list-style-type: none;
+      margin-right: 48px;
+      a {
+        font-family: $ibmplexmono_regular;
+        text-decoration: none;
+        color: $font_primary;
+      }
+
+      a:hover {
+        color: $font_third;
+        text-decoration: line-through;
+      }
+      a:active {
+        color: $font_fourth;
+      }
+    }
+  }
+}
+
+/*NAV mobile*/
+
+@media screen and (max-width: 320px) {
+  nav {
+    height: 44px;
+    display: flex;
+    width: 100%;
+
+    .logo {
+      margin-left: 16px;
+      width: 24px;
+    }
+
+    .listas-nav {
+      display: none;
+      box-sizing: border-box;
       width: 100%;
 
-      .logo_mobile {
-        position: relative;
-        display: inline-flex;
-        justify-self: flex-start;
-        margin-left: 16px;
-        height: 24px;
-        width: 24px;
-      }
-
-      #checkbox {
-        display: inline-flex;
-        justify-self: flex-end;
-        width: 40px;
-        height: 32px;
-
-        input[type="checkbox"]:checked ~ ul {
-          height: 224px;
-          display: flex;
-        }
-      }
-
-      #icon_menu {
-        display: inline-flex;
-        justify-self: flex-end;
-        margin-right: 19px;
-      }
-
-      #icon_close {
-      }
-
-      ul {
-        background: $nav_mobile;
+      li {
+        height: 35px;
         display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 44px;
-        width: 100%;
+        align-items: center;
 
-        li {
-          position: relative;
-          margin-bottom: 24px;
-          margin-left: 16px;
-          list-style-type: none;
-
-          a {
-            font-family: $ibmplexmono_regular;
-            text-decoration: none;
-            line-height: 28px;
-            color: $font_secondary;
-          }
+        a {
+          font-family: $ibmplexmono_regular;
+          font-size: 16px;
+          color: $font_secondary;
+          line-height: 28px;
+          text-decoration: none;
         }
       }
+    }
 
-      ul li:first-child {
-        margin-top: 16px;
+    .btncontrol:checked ~ .listas-nav {
+      position: absolute;
+      top: 44px;
+      left: 0px;
+      display: block;
+      width: 100%;
+      background: $nav_mobile;
+      z-index: 1;
+      padding-top: 16px;
+
+      li {
+        margin-bottom: 24px;
+        margin-left: 5%;
+
+        a {
+          font-size: 16px;
+          color: $font_secondary;
+          letter-spacing: 0;
+          line-height: 28px;
+        }
+      }
+    }
+
+    .btncontrol:checked + .icons .fa-bars {
+      display: none;
+    }
+
+    .btncontrol:checked + .icons .fa-times {
+      display: block;
+    }
+    .icons {
+      display: flex;
+      margin-right: 16px;
+
+      .fa-bars {
+        font-size: 18px;
+      }
+
+      .fa-times {
+        font-size: 18px;
+        display: none;
       }
     }
   }
