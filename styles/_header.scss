@@ -1,0 +1,102 @@
+/*HEADER*/
+.header-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13.9%;
+  margin-top: 120px;
+
+  h1 {
+    font-family: $font-sans;
+    color: $font_primary;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 84px;
+    letter-spacing: 0;
+
+    .strike {
+      text-decoration: line-through;
+    }
+  }
+  .p_desktop {
+    font-family: $font-mono;
+    color: $font_primary;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: justify;
+  }
+
+  .p_mobile {
+    display: none;
+  }
+
+  h1:after {
+    content: ".";
+    color: #0000ec;
+  }
+
+  .btn {
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $font_third;
+    width: 226px;
+    height: 56px;
+    font-family: $font-mono;
+    text-decoration: none;
+    font-size: 18px;
+    color: #060a24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .btn:hover {
+    color: $background_primary;
+    background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+  }
+}
+
+/*HEADER mobile*/
+
+@media screen and (max-width: 320px) {
+  .header-text {
+    margin-top: 29px;
+    margin-left: 16px;
+
+    h1 {
+      font-size: 36px;
+      line-height: 42px;
+    }
+    h1:after {
+      color: #060a24 100%;
+    }
+
+    .p_desktop {
+      display: none;
+    }
+
+    .p_mobile {
+      margin-top: 16px;
+      display: flex;
+      height: 66px;
+      width: 288px;
+      font-family: $font-mono;
+      color: #060a24;
+      text-align: justify;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0;
+      font-weight: 400;
+    }
+
+    .btn {
+      margin-top: 36px;
+      width: 288px;
+      height: 48px;
+    }
+  }
+}

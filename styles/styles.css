@@ -6,30 +6,6 @@
 /* LOS --- DE ARRIBA SON UTILIZADOS SI DESEO SUBIR A GITHUB PAGES*/
 /*Importar archivos*/
 /*FONTS*/
-/*  IBM Plex Mono REGULAR  */
-@font-face {
-  font-family: "IBM Plex Mono Regular", monospace;
-  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
-}
-
-/*  IBM Plex sans REGULAR  */
-@font-face {
-  font-family: "IBM Plex Sans Regular", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
-}
-
-/*  IBM Plex Mono MEDIUM  */
-@font-face {
-  font-family: "IBM Plex Mono Medium", monospace;
-  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap");
-}
-
-/*  IBM Plex sans Semi Bold  */
-@font-face {
-  font-family: "IBM Plex Sans Semi Bold", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap");
-}
-
 /*TAMAÑOS*/
 /*COLORES*/
 /*--------------------------------------------------------------------------------*/
@@ -48,6 +24,7 @@ body {
   background-color: #ffffff;
 }
 
+/*NAV*/
 /*NAV*/
 nav {
   display: -webkit-box;
@@ -88,18 +65,23 @@ nav .listas-nav li {
 }
 
 nav .listas-nav li a {
-  font-family: "IBM Plex Mono Regular", monospace;
+  font-family: "IBM Plex Mono", monospace;
   text-decoration: none;
-  color: #060a24;
+  color: #060a24 100%;
 }
 
 nav .listas-nav li a:hover {
-  color: #00f3bb;
+  color: #00f3bb 100%;
   text-decoration: line-through;
 }
 
 nav .listas-nav li a:active {
   color: #060a24 56%;
+}
+
+nav .listas-nav li a:visited {
+  text-decoration: none;
+  color: #060a24;
 }
 
 /*NAV mobile*/
@@ -131,7 +113,7 @@ nav .listas-nav li a:active {
             align-items: center;
   }
   nav .listas-nav li a {
-    font-family: "IBM Plex Mono Regular", monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
     color: #ffffff;
     line-height: 28px;
@@ -143,7 +125,7 @@ nav .listas-nav li a:active {
     left: 0px;
     display: block;
     width: 100%;
-    background: #0000ec;
+    background: #0000ec 100%;
     z-index: 1;
     padding-top: 16px;
   }
@@ -175,6 +157,119 @@ nav .listas-nav li a:active {
   nav .icons .fa-times {
     font-size: 18px;
     display: none;
+  }
+}
+
+/*HEADER*/
+/*HEADER*/
+.header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 13.9%;
+  margin-top: 120px;
+}
+
+.header-text h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #060a24 100%;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 84px;
+  letter-spacing: 0;
+}
+
+.header-text h1 .strike {
+  text-decoration: line-through;
+}
+
+.header-text .p_desktop {
+  font-family: "IBM Plex Mono", monospace;
+  color: #060a24 100%;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.header-text .p_mobile {
+  display: none;
+}
+
+.header-text h1:after {
+  content: ".";
+  color: #0000ec;
+}
+
+.header-text .btn {
+  margin-top: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #00f3bb 100%;
+  width: 226px;
+  height: 56px;
+  font-family: "IBM Plex Mono", monospace;
+  text-decoration: none;
+  font-size: 18px;
+  color: #060a24;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.header-text .btn:hover {
+  color: #ffffff;
+  background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+}
+
+/*HEADER mobile*/
+@media screen and (max-width: 320px) {
+  .header-text {
+    margin-top: 29px;
+    margin-left: 16px;
+  }
+  .header-text h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .header-text h1:after {
+    color: #060a24 100%;
+  }
+  .header-text .p_desktop {
+    display: none;
+  }
+  .header-text .p_mobile {
+    margin-top: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 66px;
+    width: 288px;
+    font-family: "IBM Plex Mono", monospace;
+    color: #060a24;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+  .header-text .btn {
+    margin-top: 36px;
+    width: 288px;
+    height: 48px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
