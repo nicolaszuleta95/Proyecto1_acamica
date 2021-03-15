@@ -272,4 +272,146 @@ nav .listas-nav li a:visited {
     height: 48px;
   }
 }
+
+/*EPISODIOS*/
+/*EPISODIOS*/
+.episodios {
+  position: relative;
+  color: white;
+  margin-top: 5px;
+  width: 100%;
+  height: 1042.6px;
+  display: block;
+  padding-top: 176px;
+}
+
+.episodios h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 48px;
+  line-height: 62px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0;
+  margin-left: 200px;
+}
+
+.episodios .cont_episodios {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-rows: (232px)[2];
+  -ms-grid-columns: (584px)[2];
+      grid-template: repeat(2, 232px)/repeat(2, 584px);
+  gap: 72px;
+  margin-top: 26px;
+}
+
+.episodios .cont_episodios iframe {
+  width: 584px;
+  height: 232px;
+}
+
+.background_azul {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  -webkit-transform: skewY(-6deg);
+          transform: skewY(-6deg);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  z-index: -1;
+}
+
+/*EPISODIOS mobile*/
+@media screen and (max-width: 320px) {
+  .episodios {
+    margin-top: 24px;
+    width: 100%;
+    height: 1203.5px;
+    padding-top: 64px;
+  }
+  .episodios h2 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-left: 16px;
+  }
+  .episodios .cont_episodios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 90px;
+    margin: 21px 2% 0;
+    gap: 0;
+  }
+  .episodios .cont_episodios iframe {
+    margin-bottom: 11px;
+    border: 0;
+    width: 100%;
+    height: 232px;
+  }
+}
+
+/*VENIMOS*/
+/*VENIMOS*/
+.venimos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.venimos img {
+  width: 457.6px;
+  height: 660px;
+  margin-top: -168.6px;
+  margin-left: 200px;
+}
+
+.venimos .container_text {
+  max-width: 464px;
+  margin-left: 62.4px;
+  margin-right: 256px;
+}
+
+.venimos .container_text h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 48px;
+  line-height: 62px;
+  font-weight: 100;
+  color: #060a24;
+  letter-spacing: 0;
+  margin-bottom: 24px;
+}
+
+.venimos .container_text p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 24px;
+  font-weight: 400;
+}
 /*# sourceMappingURL=styles.css.map */
