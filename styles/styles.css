@@ -408,4 +408,52 @@ nav .listas-nav li a:visited {
   line-height: 24px;
   font-weight: 400;
 }
+
+@media screen and (max-width: 320px) {
+  .venimos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .venimos img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -70px 0 0 -20px;
+    width: 360px;
+    height: 519px;
+  }
+  .venimos .container_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .venimos .container_text h2 {
+    width: 288px;
+    margin-top: 27px;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 42px;
+  }
+  .venimos .container_text p {
+    height: 254px;
+    width: 288px;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
