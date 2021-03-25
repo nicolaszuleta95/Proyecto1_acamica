@@ -1,0 +1,49 @@
+/*INVITADOS*/
+
+.invitados {
+  width: 100%;
+  margin-top: 64px;
+
+  h2 {
+    margin-left: 200px;
+    font-family: $font-sans;
+    font-size: 48px;
+    color: #060a24;
+    letter-spacing: 0;
+    font-weight: 100;
+  }
+  .container {
+    margin-top: 36px;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(2, 364px) / repeat(3, 480px);
+
+    img {
+      height: 364px;
+      width: 480px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .invitados {
+    margin-top: 54px;
+
+    h2 {
+      margin-left: 16px;
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    .container {
+      margin-top: 14px;
+      display: grid;
+
+      grid-template: repeat(6, 243px) / 320px;
+      img {
+        height: 243px;
+        width: 320px;
+      }
+    }
+  }
+}
