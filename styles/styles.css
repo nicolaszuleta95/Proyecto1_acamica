@@ -322,10 +322,8 @@ nav .listas-nav li a:visited {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
-  -webkit-transform: skewY(-6deg);
-          transform: skewY(-6deg);
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
+  -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+          clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
   z-index: -1;
 }
 
@@ -362,6 +360,10 @@ nav .listas-nav li a:visited {
     border: 0;
     width: 100%;
     height: 232px;
+  }
+  .background_azul {
+    -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+            clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
   }
 }
 
