@@ -67,11 +67,11 @@ nav .listas-nav li {
 nav .listas-nav li a {
   font-family: "IBM Plex Mono", monospace;
   text-decoration: none;
-  color: #060a24 100%;
+  color: #060a24;
 }
 
 nav .listas-nav li a:hover {
-  color: #00f3bb 100%;
+  color: #00f3bb;
   text-decoration: line-through;
 }
 
@@ -125,7 +125,7 @@ nav .listas-nav li a:visited {
     left: 0px;
     display: block;
     width: 100%;
-    background: #0000ec 100%;
+    background: #0000ec;
     z-index: 1;
     padding-top: 16px;
   }
@@ -180,7 +180,7 @@ nav .listas-nav li a:visited {
 
 .header-text h1 {
   font-family: "IBM Plex Sans", sans-serif;
-  color: #060a24 100%;
+  color: #060a24;
   font-weight: 300;
   font-size: 64px;
   line-height: 84px;
@@ -193,7 +193,7 @@ nav .listas-nav li a:visited {
 
 .header-text .p_desktop {
   font-family: "IBM Plex Mono", monospace;
-  color: #060a24 100%;
+  color: #060a24;
   font-size: 16px;
   letter-spacing: 0;
   line-height: 24px;
@@ -221,7 +221,7 @@ nav .listas-nav li a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #00f3bb 100%;
+  background: #00f3bb;
   width: 226px;
   height: 56px;
   font-family: "IBM Plex Mono", monospace;
@@ -665,7 +665,7 @@ nav .listas-nav li a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #00f3bb 100%;
+  background: #00f3bb;
   font-family: "IBM Plex Mono", monospace;
   text-decoration: none;
   font-size: 18px;
@@ -734,7 +734,7 @@ nav .listas-nav li a:visited {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #00f3bb 100%;
+    background: #00f3bb;
     font-family: "IBM Plex Mono", monospace;
     text-decoration: none;
     font-size: 16px;
