@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*
----
----
-*/
-/* LOS --- DE ARRIBA SON UTILIZADOS SI DESEO SUBIR A GITHUB PAGES*/
-/*Importar archivos*/
 /*FONTS*/
 /*TAMAÑOS*/
 /*COLORES*/
@@ -31,11 +25,11 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 80px;
 }
 
@@ -100,7 +94,7 @@ nav .listas-nav li a:visited {
   nav .listas-nav {
     display: none;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
     width: 100%;
   }
   nav .listas-nav li {
@@ -109,8 +103,8 @@ nav .listas-nav li a:visited {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   nav .listas-nav li a {
     font-family: "IBM Plex Mono", monospace;
@@ -168,8 +162,8 @@ nav .listas-nav li a:visited {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 13.9%;
   margin-top: 120px;
 }
@@ -216,11 +210,11 @@ nav .listas-nav li a:visited {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #00f3bb;
   width: 226px;
   height: 56px;
@@ -305,11 +299,11 @@ nav .listas-nav li a:visited {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-grid-rows: (232px) [2];
-  -ms-grid-columns: (584px) [2];
-  grid-template: repeat(2, 232px) / repeat(2, 584px);
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-rows: (232px)[2];
+  -ms-grid-columns: (584px)[2];
+      grid-template: repeat(2, 232px)/repeat(2, 584px);
   gap: 72px;
   margin-top: 26px;
 }
@@ -329,7 +323,7 @@ nav .listas-nav li a:visited {
   height: 100%;
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
   -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
-  clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+          clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
   z-index: -1;
 }
 
@@ -351,12 +345,12 @@ nav .listas-nav li a:visited {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-bottom: 90px;
     margin: 21px 2% 0;
     gap: 0;
@@ -369,7 +363,7 @@ nav .listas-nav li a:visited {
   }
   .background_azul {
     -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
-    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+            clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
   }
 }
 
@@ -381,8 +375,8 @@ nav .listas-nav li a:visited {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .venimos img {
@@ -422,8 +416,8 @@ nav .listas-nav li a:visited {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .venimos img {
     display: -webkit-box;
@@ -439,11 +433,11 @@ nav .listas-nav li a:visited {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 0;
     margin-right: 0;
   }
@@ -484,9 +478,9 @@ nav .listas-nav li a:visited {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (364px) [2];
-  -ms-grid-columns: (480px) [3];
-  grid-template: repeat(2, 364px) / repeat(3, 480px);
+  -ms-grid-rows: (364px)[2];
+  -ms-grid-columns: (480px)[3];
+      grid-template: repeat(2, 364px)/repeat(3, 480px);
 }
 
 .invitados .container img {
@@ -507,9 +501,9 @@ nav .listas-nav li a:visited {
     margin-top: 14px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (243px) [6];
+    -ms-grid-rows: (243px)[6];
     -ms-grid-columns: 320px;
-    grid-template: repeat(6, 243px) / 320px;
+        grid-template: repeat(6, 243px)/320px;
   }
   .invitados .container img {
     height: 243px;
@@ -538,8 +532,8 @@ nav .listas-nav li a:visited {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 130px;
-  -ms-grid-columns: (260px) [4];
-  grid-template: 130px / repeat(4, 260px);
+  -ms-grid-columns: (260px)[4];
+      grid-template: 130px/repeat(4, 260px);
 }
 
 .temas .container_items img {
@@ -591,14 +585,14 @@ nav .listas-nav li a:visited {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .temas .container_items p {
     display: -webkit-box;
@@ -631,11 +625,11 @@ nav .listas-nav li a:visited {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   margin-top: 34px;
   height: 518px;
@@ -660,11 +654,11 @@ nav .listas-nav li a:visited {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #00f3bb;
   font-family: "IBM Plex Mono", monospace;
   text-decoration: none;
@@ -691,7 +685,7 @@ nav .listas-nav li a:visited {
   height: 100%;
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
   -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
   z-index: -1;
 }
 
@@ -702,11 +696,11 @@ nav .listas-nav li a:visited {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     margin-top: 42px;
     height: 341px;
@@ -729,11 +723,11 @@ nav .listas-nav li a:visited {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #00f3bb;
     font-family: "IBM Plex Mono", monospace;
     text-decoration: none;
@@ -745,7 +739,7 @@ nav .listas-nav li a:visited {
   }
   .novedades .background_azul_nov {
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   }
 }
 
@@ -756,11 +750,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100px;
 }
 
@@ -795,14 +789,14 @@ footer .social-icons i {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer p {
     margin-top: 24px;
@@ -815,11 +809,11 @@ footer .social-icons i {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: 0;
   }
   footer .social-icons a {
