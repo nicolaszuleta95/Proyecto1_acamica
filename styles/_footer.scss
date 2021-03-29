@@ -16,6 +16,10 @@ footer {
 
   .social-icons {
     margin-right: 100px;
+    a {
+      color: #060a24;
+      text-decoration: none;
+    }
     i {
       width: 16px;
       height: 28px;
@@ -43,13 +47,16 @@ footer {
       justify-content: center;
       align-items: center;
       margin-right: 0;
-      i {
+      a {
         margin-top: 16px;
-        width: 16px;
-        height: 28px;
-        margin-right: 38px;
+
+        i {
+          margin-right: 38px;
+          width: 16px;
+          height: 28px;
+        }
       }
-      i:first-of-type {
+      a:first-of-type {
         margin-left: 45px;
       }
     }

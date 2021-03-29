@@ -777,6 +777,11 @@ footer .social-icons {
   margin-right: 100px;
 }
 
+footer .social-icons a {
+  color: #060a24;
+  text-decoration: none;
+}
+
 footer .social-icons i {
   width: 16px;
   height: 28px;
@@ -817,13 +822,15 @@ footer .social-icons i {
             align-items: center;
     margin-right: 0;
   }
-  footer .social-icons i {
+  footer .social-icons a {
     margin-top: 16px;
+  }
+  footer .social-icons a i {
+    margin-right: 38px;
     width: 16px;
     height: 28px;
-    margin-right: 38px;
   }
-  footer .social-icons i:first-of-type {
+  footer .social-icons a:first-of-type {
     margin-left: 45px;
   }
 }
